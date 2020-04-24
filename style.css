@@ -41,7 +41,7 @@ ul {
   list-style: none;
 }
 
-footer{ 
+footer{
   padding: 20px 0;
   vertical-align:bottom;
   margin-top: 30px;
@@ -96,17 +96,30 @@ figcaption {
   margin: 0;
 }
 
-.glitchButton {
-  float: left;
-  padding: 1rem 0.5rem 0 0.5rem;
+.print-button {
+  position: fixed;
+  top: 50px;
+  right: 50px;
+  background-color: #ddd;
+  border: 1px solid #555;
+  height: 36px;
+  width: 36px;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-
-.cc-licence {
-  float: right;
-  margin: 1rem 0.5rem 0 0.5rem;
+.print-button__icon {
+  height: 30px;
+  width: 30px;
+  background-image: url("./images/printer-icon.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center center;
 }
 
 @media screen {
+
   body {
     max-width: 40rem;
     background: #000f1f;
@@ -114,13 +127,13 @@ figcaption {
   }
   h1{ color: white; }
     h1 span{ color: #ff4b27; }
-  
+
   .zine {
     background: #000f1f;
     margin-top: 30px;
     padding: 10px;
   }
-  
+
   .zine-page {
     margin-top: 10px;
     border-top: 3px double #000f1f;
@@ -129,27 +142,30 @@ figcaption {
 }
 
 @media print {
+  .print-button {
+    display: none;
+  }
   @page {
     size: landscape;
   }
-  
+
   body {
     font-size: 70%;
   }
-  
+
   a {
     color: inherit;
     text-decoration: none;
   }
- 
+
   h1{ padding:45vh 30px;}
-  
+
   .mini-img {
     max-width: 4.4rem;
     padding: 0;
     margin: 0;
   }
-  
+
   .zine {
     width: 100vw;
     height: 100vh;
