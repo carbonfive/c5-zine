@@ -41,7 +41,7 @@ ul {
   list-style: none;
 }
 
-footer{
+footer {
   padding: 20px 0;
   vertical-align:bottom;
   margin-top: 30px;
@@ -109,6 +109,7 @@ figcaption {
   align-items: center;
   justify-content: center;
 }
+
 .print-button__icon {
   height: 30px;
   width: 30px;
@@ -159,6 +160,12 @@ figcaption {
   }
 
   h1{ padding:45vh 30px;}
+
+  footer.no-submission {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+  }
 
   .mini-img {
     max-width: 4.4rem;
