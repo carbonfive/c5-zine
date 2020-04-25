@@ -1,10 +1,10 @@
 ---
-"title": "C5 Zine - Issue 1 - Social Distancing"
+"title": "C5 Zine - Issue 2 - Shelter In Place"
 ---
 
 <%
-asset_dir = data.issue1.asset_dir
-page = data.issue1.pages[0]
+asset_dir = data.issue2.asset_dir
+page = data.issue2.pages[0]
 %>
 
 <nav class="nav">
@@ -20,11 +20,11 @@ page = data.issue1.pages[0]
   </ol>
 </nav>
 
-<main class="zine zine--<%= data.issue1.number_of_sheets %>-sheeter">
+<main class="zine zine--<%= data.issue2.number_of_sheets %>-sheeter">
   <header class="zine-page page-1">
     <%= image_tag( asset_dir + page.image, class: "full-img", alt: page.title ) %>
   </header>
-  <% data.issue1.pages[1..-1].each_with_index do |page, index| %>
+  <% data.issue2.pages[1..-1].each_with_index do |page, index| %>
     <section class="zine-page page-<%= index + 2 %>">
       <%= image_tag( asset_dir + page.image, class: "full-img", alt: page.title ) %>
       <figcaption><%= page.author %></figcaption>
