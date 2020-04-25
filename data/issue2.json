@@ -4,38 +4,38 @@
   "pages": [
     {
       "title": "Shelter In Place",
-      "image":  "page1-mr-rogers.png",
+      "image":  "shelter-in-place-mr-rogers.png",
       "author" : "Mr Rogers"
     },
     {
+      "title": "Wine & Puzzles",
+      "image":  "wine-and-puzzles-shannon-croy.png",
+      "author":  "Shannon Croy"
+    },
+    {
       "title": "Bread baking anticipation",
-      "image":  "page2-emily-mi.jpg",
+      "image":  "bread-making-emily-mi.jpg",
       "author":  "Emily Mi"
     },
     {
-      "title": "",
-      "image":  "",
-      "author":  ""
-    },
-    {
       "title": "Showing Emotion in the time of Covid-19",
-      "image":  "page4-mr-rogers.png",
+      "image":  "emotions-in-the-time-of-covid-19-mr-rogers.png",
       "author":  "Mr Rogers"
     },
     {
       "title": "",
-      "image":  "page5-nicole-thayer.jpg",
-      "author":  "Nikki Thayer"
-    },
-    {
-      "title": "",
-      "image":  "page6-sidney-keese.png",
+      "image":  "sidney-keese.png",
       "author":  "Sidney Keese"
     },
     {
       "title": "",
       "image":  "",
       "author":  ""
+    },
+    {
+      "title": "",
+      "image":  "nikki-thayer.jpg",
+      "author":  "Nikki Thayer"
     }
   ]
 }
