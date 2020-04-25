@@ -1,0 +1,41 @@
+{
+  "asset_dir": "issue1/",
+  "number_of_sheets": 1,
+  "pages": [
+    {
+      "title": "Nikki Thayer",
+      "image":  "page1-nicole-thayer.png",
+      "author" : "Social Distancing Issue 1"
+    },
+    {
+      "title": "how to socially distance by Mr. Rogers",
+      "image":  "page2-mr-rogers.png",
+      "author":  "Mr. Rogers"
+    },
+    {
+      "title": "Going to Walgreens by Shannon Wells",
+      "image":  "page3-shannon-wells.png",
+      "author":  "Shannon Wells"
+    },
+    {
+      "title": "Social Distancing by Dave Hendee",
+      "image":  "page4-david-hendee.png",
+      "author":  "Dave Hendee"
+    },
+    {
+      "title": "inspire los angeles by Nikki Thayer",
+      "image":  "page5-nicole-thayer.png",
+      "author":  "Nikki Thayer"
+    },
+    {
+      "title": "Erin Murphy",
+      "image":  "page6-erin-murphy.jpg",
+      "author":  "Erin Murphy"
+    },
+    {
+      "title": "Reflection by Mr. Rogers",
+      "image":  "page7-mr-rogers.jpg",
+      "author":  "Mr. Rogers"
+    }
+  ]
+}
