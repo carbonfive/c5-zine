@@ -52,6 +52,11 @@ You can run `bundle exec middleman server` to see the local version (at `http://
 Deployment
 ----------
 
-`bundle exec middleman build`
+We've included [middleman-github-deploy or mgd](https://github.com/hovancik/middleman-github-deploy)https://github.com/hovancik/middleman-github-deploy)
+This task simply runs `mgd`
+
+`bundle exec rake deploy`
+
+Visit the newly deployed site at `https://carbonfive.github.io/c5-zine`
 
    
