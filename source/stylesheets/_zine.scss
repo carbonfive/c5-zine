@@ -1,0 +1,148 @@
+@import "./colors";
+
+.zine {
+  .zine-li:before {
+    content: '\21D2';
+    margin-left: -20px;
+    margin-right: 10px;
+  }
+
+  figure {
+    margin: 0;
+    padding: 0;
+  }
+
+  .captioned-img {
+    object-fit: contain;
+    max-height: 100%;
+    max-width: 100%;
+    padding: 0 2rem 0 2rem;
+    box-sizing: border-box;
+  }
+
+  figcaption {
+    font-size: 100%;
+    text-align:right;
+    color: $white;
+    padding: 0;
+    margin: 0 2rem 0 2rem;
+  }
+
+  .full-img {
+    object-fit: contain;
+    max-height: 100%;
+    max-width: 100%;
+    width:100%;
+    padding: 1rem;
+    box-sizing: border-box;
+    margin: 0 auto;
+  }
+
+  .mini-img {
+    max-width: 10rem;
+    padding: 0;
+    margin: 0;
+  }
+
+  footer{
+    color: $white;
+    padding: 20px 0;
+    vertical-align:bottom;
+  }
+
+  .footer-contents {
+    font-weight: 700;
+    font-size: 180%;
+  }
+
+  .hashtag {
+    color: $red-orange;
+  }
+}
+
+@media screen {
+  .zine {
+    background: $blue-charcoal;
+    margin-top: 30px;
+    padding: 10px;
+  }
+
+  .zine-page {
+    margin-top: 10px;
+    border-top: 3px double $blue-charcoal;
+    padding-top: 10px;
+  }
+}
+
+@media print {
+  @page {
+    size: landscape;
+  }
+
+  body {
+    font-size: 70%;
+  }
+
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
+
+  footer {
+    color: $blue-charcoal;
+  }
+
+  .zine-page--last {
+    .footer-contents {
+      margin-top: 0;
+      margin: 35vh 20px;
+    }
+  }
+
+  .mini-img {
+    max-width: 4.4rem;
+    padding: 0;
+    margin: 0;
+  }
+
+  .zine {
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    grid-gap: 2px 2px;
+    background: lightgrey;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    justify-items: stretch;
+    align-items: stretch;
+  }
+
+  .zine-page {
+    display: block;
+    background: white;
+    box-sizing: border-box;
+    padding: 0.5vh;
+    overflow: hidden;
+  }
+
+  /* support for 2 sheets */
+  @for $i from 1 through 16 {
+    .page-#{$i} {
+      grid-area: page-#{$i};
+    }
+  }
+
+  .zine--1-sheeter {
+    grid-template-areas:
+    "page-5 page-4 page-3 page-2"
+      "page-6 page-7 page-8 page-1";
+
+    .page-5, .page-4, .page-3, .page-2 {
+      transform: rotate(180deg);
+    }
+  }
+
+  .zine--2-sheeter {
+  }
+
+}

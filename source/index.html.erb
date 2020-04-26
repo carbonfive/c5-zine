@@ -7,7 +7,19 @@ asset_dir = data.issue1.asset_dir
 page = data.issue1.pages[0]
 %>
 
-<button class="print-button" title="Print Me!" ><div class="print-button__icon"/></button>
+<nav class="nav">
+  <ol class="nav__items">
+    <li class="nav-item nav-item__print">
+      <button class="nav-item__print-button" title="Print Me!" ><i class="nav-item__print-button-icon"></i></button>
+    </li>
+    <li class="nav-item nav-item__info">
+      <a class="nav-item__info-link" href="/info" target="_blank">
+        <i class="nav-item__info-icon"></i>
+      </a>
+    </li>
+  </ol>
+</nav>
+
 <main class="zine zine--<%= data.issue1.number_of_sheets %>-sheeter">
   <header class="zine-page page-1">
     <%= image_tag( asset_dir + page.image, class: "full-img", alt: page.title ) %>
@@ -27,6 +39,6 @@ page = data.issue1.pages[0]
 
 <script type="text/javascript">
  document.addEventListener("DOMContentLoaded", function() {
-   document.querySelector('.print-button').addEventListener('click', function() { window.print(); } );
+   document.querySelector(".nav-item__print-button").addEventListener("click", function() { window.print(); } );
  });
 </script>

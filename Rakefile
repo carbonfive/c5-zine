@@ -1,8 +1,12 @@
 
 task :deploy do
-  `mgd`
+  system("mgd")
+end
+
+task :serve do
+  system("middleman server")
 end
 
 task :build do
-  `middleman build`
+  system("middleman build")
 end

@@ -1,0 +1,76 @@
+@import "./colors";
+
+@mixin instructional-image {
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
+  min-height: 200px;
+  width: 100%;
+  display: flex;
+}
+
+.info {
+  background: $blue-charcoal;
+  margin-top: 30px;
+  padding-left: 10px 30px;
+  color: $white;
+  width: 90%;
+  margin: auto;
+}
+
+.info-steps {
+  margin-bottom: 20px;
+}
+
+.info-steps__items {
+  padding: 0;
+}
+
+.info-steps__item {
+  margin-left: 1.1em;
+  margin-right: 1em;
+}
+
+.info-steps__item-image {
+  width: 100%;
+}
+
+.info-steps__item-image-container {
+  padding: 20px;
+  background-color: $red-orange;
+  margin: 10px 0;
+}
+
+.info-steps__item--2 {
+  .info-steps__item-image {
+    @include instructional-image;
+    background-image: image-url('fold-in-half-first.svg');
+  }
+}
+
+.info-steps__item--3 {
+  .info-steps__item-image {
+    @include instructional-image;
+    background-image: image-url('fold-in-half-long-way.svg');
+  }
+}
+
+.info-steps__item--5 {
+  .info-steps__item-image {
+    @include instructional-image;
+    background-image: image-url('folding-layout.svg');
+  }
+}
+.info-steps__item--7 {
+  .info-steps__item-image {
+    @include instructional-image;
+    background-image: image-url('push-center-together.svg');
+  }
+}
+
+.info-steps__item--8 {
+  .info-steps__item-image {
+    @include instructional-image;
+    background-image: image-url('finished-book.svg');
+  }
+}

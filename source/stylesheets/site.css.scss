@@ -1,4 +1,17 @@
 /* CSS files add styling rules to your content */
+@import "./colors";
+@import "./zine";
+@import "./info";
+@import "./navigation";
+
+button {
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+  color: $blue-charcoal;
+}
 
 body {
   font-family: "Futura","Helvetica",sans-serif;
@@ -6,221 +19,11 @@ body {
   padding: 0;
 }
 
-h1 {
-  color: #000f1f;
-  padding: 0;
-  margin: 0;
-  font-size: 180%;
-}
-
-h2 {
-  background: #ead1dc;
-  color: #000f1f;
-  font-family: monospace;
-  text-align: center;
-  font-size: 140%;
-  font-weight: normal;
-  margin: 0.25rem 0 0 0;
-  padding: 0.5rem 0 0.5rem;
-}
-
-th {
-  text-align: left;
-  background: #c9daf8;
-  color: #073763;
-}
-
-p {
-  margin: 0;
-  padding: 0.5rem;
-  font-size: 105%;
-}
-
-ul {
-  margin: 0;
-  list-style: none;
-}
-
-.zine-li:before {
-  content: '\21D2';
-  margin-left: -20px;
-  margin-right: 10px;
-}
-
-.zine-link {
-  font-family: monospace;
-  background: #c9daf8;
-  color: #073763;
-}
-
-figure {
-  margin: 0;
-  padding: 0;
-}
-
-.captioned-img {
-  object-fit: contain;
-  max-height: 100%;
-  max-width: 100%;
-  padding: 0 2rem 0 2rem;
-  box-sizing: border-box;
-}
-
-figcaption {
-  font-size: 100%;
-  text-align:right;
-  color: white;
-  padding: 0;
-  margin: 0 2rem 0 2rem;
-}
-
-.full-img {
-  object-fit: contain;
-  max-height: 100%;
-  max-width: 100%;
-  width:100%;
-  padding: 1rem;
-  box-sizing: border-box;
-  margin: 0 auto;
-}
-
-.mini-img {
-  max-width: 10rem;
-  padding: 0;
-  margin: 0;
-}
-
-.print-button {
-  position: fixed;
-  top: 50px;
-  right: 50px;
-  background-color: #ddd;
-  border: 1px solid #555;
-  height: 36px;
-  width: 36px;
-  border-radius: 5px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.print-button__icon {
-  height: 30px;
-  width: 30px;
-  background-image: image-url("printer-icon.svg");
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: center center;
-}
-
-
-footer{
-  color: white;
-  padding: 20px 0;
-  vertical-align:bottom;
-}
-
-.footer-contents {
-  font-weight: 700;
-  font-size: 180%;
-}
-
-.hashtag { color: #ff4b27; }
-
 @media screen {
-
   body {
     max-width: 40rem;
-    background: #000f1f;
+    background: $blue-charcoal;
     margin: auto;
   }
-  h1{ color: white; }
-  h1 span{ color: #ff4b27; }
-
-  .zine {
-    background: #000f1f;
-    margin-top: 30px;
-    padding: 10px;
-  }
-
-  .zine-page {
-    margin-top: 10px;
-    border-top: 3px double #000f1f;
-    padding-top: 10px;
-  }
 }
 
-@media print {
-  .print-button {
-    display: none;
-  }
-  @page {
-    size: landscape;
-  }
-
-  body {
-    font-size: 70%;
-  }
-
-  a {
-    color: inherit;
-    text-decoration: none;
-  }
-
-  footer {
-    color: black;
-  }
-
-  .zine-page--last {
-    .footer-contents {
-      margin-top: 0;
-      margin: 35vh 20px;
-    }
-  }
-  
-  .mini-img {
-    max-width: 4.4rem;
-    padding: 0;
-    margin: 0;
-  }
-
-  .zine {
-    width: 100vw;
-    height: 100vh;
-    display: grid;
-    grid-gap: 2px 2px;
-    background: lightgrey;
-    grid-template-rows: 1fr 1fr;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    justify-items: stretch;
-    align-items: stretch;
-  }
-
-  .zine-page {
-    display: block;
-    background: white;
-    box-sizing: border-box;
-    padding: 0.5vh;
-    overflow: hidden;
-  }
-
-  /* support for 2 sheets */
-  @for $i from 1 through 16 {
-    .page-#{$i} {
-      grid-area: page-#{$i};
-    }
-  }
-  
-  .zine--1-sheeter {
-    grid-template-areas:
-    "page-5 page-4 page-3 page-2"
-      "page-6 page-7 page-8 page-1";
-    
-    .page-5, .page-4, .page-3, .page-2 {
-      transform: rotate(180deg);
-    }
-  }
-
-  .zine--2-sheeter {
-  }
-  
-}
