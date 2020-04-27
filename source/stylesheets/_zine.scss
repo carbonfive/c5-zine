@@ -1,5 +1,15 @@
 @import "./colors";
 
+@mixin page-image {
+  object-fit: contain;
+  max-height: 100%;
+  max-width: 100%;
+  width:100%;
+  padding: 1rem;
+  box-sizing: border-box;
+  margin: 0 auto;
+}
+
 .zine {
   .zine-li:before {
     content: '\21D2';
@@ -13,11 +23,7 @@
   }
 
   .captioned-img {
-    object-fit: contain;
-    max-height: 100%;
-    max-width: 100%;
-    padding: 0 2rem 0 2rem;
-    box-sizing: border-box;
+    @include page-image;
   }
 
   figcaption {
@@ -29,19 +35,7 @@
   }
 
   .full-img {
-    object-fit: contain;
-    max-height: 100%;
-    max-width: 100%;
-    width:100%;
-    padding: 1rem;
-    box-sizing: border-box;
-    margin: 0 auto;
-  }
-
-  .mini-img {
-    max-width: 10rem;
-    padding: 0;
-    margin: 0;
+    @include page-image;
   }
 
   footer{
@@ -99,12 +93,6 @@
     }
   }
 
-  .mini-img {
-    max-width: 4.4rem;
-    padding: 0;
-    margin: 0;
-  }
-
   .zine {
     width: 100vw;
     height: 100vh;
@@ -115,6 +103,12 @@
     grid-template-columns: 1fr 1fr 1fr 1fr;
     justify-items: stretch;
     align-items: stretch;
+    figcaption {
+      color: $comet;
+    }
+    .captioned-img {
+      max-height: 90%;
+    }
   }
 
   .zine-page {
