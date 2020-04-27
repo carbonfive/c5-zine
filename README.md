@@ -47,7 +47,7 @@ Let's assume the next issue is #2.
 
 That should be it.
 
-You can run `bundle exec middleman server` to see the local version (at `http://localhost:4567`).
+You can run `bundle exec rake serve` (or `bundle exec middleman server`) to see the local version (at `http://localhost:4567`).
 
 Deployment
 ----------
