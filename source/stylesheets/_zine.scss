@@ -75,6 +75,7 @@
 
   body {
     font-size: 70%;
+    margin:auto;
   }
 
   a {
@@ -82,14 +83,10 @@
     text-decoration: none;
   }
 
-  footer {
-    color: $blue-charcoal;
-  }
-
   .zine-page--last {
     .footer-contents {
       margin-top: 0;
-      margin: 35vh 20px;
+      margin: 32vh 20px;
     }
   }
 
@@ -108,6 +105,14 @@
     }
     .captioned-img {
       max-height: 90%;
+      padding-bottom: 0.5rem;
+    }
+    footer {
+      color: $blue-charcoal;
+      padding: 0;
+    }
+    .footer-contents {
+      font-size: 130%;
     }
   }
 
