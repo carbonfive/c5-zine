@@ -75,7 +75,7 @@
 
     @media print {
       .footer-contents {
-        font-size: 40%;
+        font-size: 120%;
         color: $blue-charcoal;
         padding: 0px 10px;
       }
@@ -130,7 +130,7 @@
     align-items: stretch;
     figcaption {
       color: $comet;
-      font-size: 50%;
+      font-size: 100%;
       margin: 0;
     }
     .captioned-img {
@@ -139,7 +139,7 @@
     }
     .footer-contents {
       color: $blue-charcoal;
-      font-size: 40%;
+      font-size: 140%;
       margin-top: 0;
       margin: 32vh 20px;
     }
