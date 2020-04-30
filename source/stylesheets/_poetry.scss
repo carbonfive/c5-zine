@@ -1,0 +1,23 @@
+.poetry {
+  font-family: freight-display-pro, serif;
+  font-weight: 700;
+  font-style: normal;
+
+  padding: 40px;
+  margin-bottom: 20px;
+  color: $blue-charcoal;
+
+  background-color: $white;
+
+  em {
+    font-style: italic;
+  }
+
+  @media print {
+    font-size: 80%;
+    padding: 0 20px;
+  }
+}
+.poetry__title {
+  font-size: 160%;
+}

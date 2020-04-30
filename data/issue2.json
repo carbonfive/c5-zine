@@ -1,0 +1,54 @@
+{
+  "asset_dir": "issue2/",
+  "pages": [
+    {
+      "partial_name": "",
+      "title": "Shelter In Place",
+      "image":  "shelter-in-place-mr-rogers.png",
+      "author" : "Mr Rogers"
+    },
+    {
+      "partial_name": "",
+      "title": "Wine & Puzzles",
+      "image":  "wine-and-puzzles-shannon-croy.png",
+      "author":  "Shannon Croy"
+    },
+    {
+      "partial_name": "",
+      "title": "",
+      "image":  "shelter-in-place-shannon-wells.png",
+      "author":  "Shannon Wells"
+    },
+    {
+      "partial_name": "",
+      "title": "Bread baking anticipation",
+      "image":  "bread-making-emily-mi.jpg",
+      "author":  "Emily Mi"
+    },
+    {
+      "partial_name": "",
+      "title": "",
+      "image":  "efung.jpg",
+      "author":  "Eric Fung"
+    },
+    {
+      "partial_name": "issue2/what_is_shelter",
+      "title": "",
+      "image":  "",
+      "author":  "Gabrielle Taylor"
+    },
+    {
+      "partial_name": "",
+      "title": "mfz001",
+      "image":  "sidney-keese.png",
+      "author":  "Sidney Keese"
+    },
+    {
+      "partial_name": "issue2/emotions_in_the_time_of_covid",
+      "title": "",
+      "image":  "",
+      "author":  ""
+    }
+
+  ]
+}

@@ -1,0 +1,44 @@
+---
+"title": "C5 Zine - Issue 1 - Social Distancing"
+---
+
+<%
+asset_dir = data.issue1.asset_dir
+page = data.issue1.pages[0]
+%>
+
+<nav class="nav">
+  <ol class="nav__items">
+    <li class="nav-item nav-item__print">
+      <button class="nav-item__print-button" title="Print Me!" ><i class="nav-item__print-button-icon"></i></button>
+    </li>
+    <li class="nav-item nav-item__info">
+      <a class="nav-item__info-link" href="/info" target="_blank">
+        <i class="nav-item__info-icon"></i>
+      </a>
+    </li>
+  </ol>
+</nav>
+
+<main class="zine zine--sheet">
+  <header class="zine-page page-1">
+    <%= image_tag( asset_dir + page.image, class: "full-img", alt: page.title ) %>
+  </header>
+  <% data.issue1.pages[1..-1].each_with_index do |page, index| %>
+    <section class="zine-page page-<%= index + 2 %>">
+      <%= image_tag( asset_dir + page.image, class: "full-img", alt: page.title ) %>
+      <figcaption><%= page.author %></figcaption>
+    </section>
+  <% end  %>
+  <footer class="zine-page zine-page--last page-8">
+    <div class="footer-contents">
+      Now taking submissions at <br><span class="hashtag">#my-forthcoming-zine</span>
+    </div>
+  </footer>
+</main>
+
+<script type="text/javascript">
+ document.addEventListener("DOMContentLoaded", function() {
+   document.querySelector(".nav-item__print-button").addEventListener("click", function() { window.print(); } );
+ });
+</script>
