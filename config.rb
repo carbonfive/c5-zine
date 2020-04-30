@@ -49,3 +49,5 @@ page '/*.txt', layout: false
 
 # allow for subpages (info.html.erb can be accessed via /info)
 activate :directory_indexes
+activate :relative_assets
+activate :asset_hash
