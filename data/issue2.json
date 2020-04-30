@@ -15,33 +15,21 @@
     },
     {
       "partial_name": "",
+      "title": "",
+      "image":  "shelter-in-place-shannon-wells.png",
+      "author":  "Shannon Wells"
+    },
+    {
+      "partial_name": "",
       "title": "Bread baking anticipation",
       "image":  "bread-making-emily-mi.jpg",
       "author":  "Emily Mi"
     },
     {
       "partial_name": "",
-      "title": "Showing Emotion in the time of Covid-19",
-      "image":  "emotions-in-the-time-of-covid-19-mr-rogers.png",
-      "author":  "Mr Rogers"
-    },
-    {
-      "partial_name": "",
-      "title": "mfz001",
-      "image":  "sidney-keese.png",
-      "author":  "Sidney Keese"
-    },
-    {
-      "partial_name": "",
       "title": "",
       "image":  "efung.jpg",
       "author":  "Eric Fung"
-    },
-    {
-      "partial_name": "",
-      "title": "",
-      "image":  "nikki-thayer.jpg",
-      "author":  "Nikki Thayer"
     },
     {
       "partial_name": "issue2/what_is_shelter",
@@ -51,51 +39,16 @@
     },
     {
       "partial_name": "",
-      "title": "",
-      "image":  "",
-      "author":  ""
+      "title": "mfz001",
+      "image":  "sidney-keese.png",
+      "author":  "Sidney Keese"
     },
     {
       "partial_name": "",
-      "title": "",
-      "image":  "",
-      "author":  ""
-    },
-    {
-      "partial_name": "",
-      "title": "",
-      "image":  "",
-      "author":  ""
-    },
-    {
-      "partial_name": "",
-      "title": "",
-      "image":  "",
-      "author":  ""
-    },
-    {
-      "partial_name": "",
-      "title": "",
-      "image":  "",
-      "author":  ""
-    },
-    {
-      "partial_name": "",
-      "title": "",
-      "image":  "",
-      "author":  ""
-    },
-    {
-      "partial_name": "",
-      "title": "",
-      "image":  "",
-      "author":  ""
-    },
-    {
-      "partial_name": "footer_page",
-      "title": "",
-      "image":  "",
-      "author":  ""
+      "title": "Showing Emotion in the time of Covid-19",
+      "image":  "emotions-in-the-time-of-covid-19-mr-rogers.png",
+      "author":  "Mr Rogers"
     }
+
   ]
 }
