@@ -49,6 +49,7 @@
   }
 
   .footer-contents {
+    color: $white;
     font-weight: 700;
     font-size: 180%;
   }
@@ -58,19 +59,37 @@
   }
 }
 
+.zine {
+  .special-issue-2-footer {
+    .footer-contents {
+      padding: 10px 30px;
+      margin: auto;
+      margin: 0;
+      color: $white;
+      font-weight: 700;
+      font-size: 140%;
+    }
+    .hashtag {
+      color: $red-orange;
+    }
+
+    @media print {
+      .footer-contents {
+        font-size: 40%;
+        color: $blue-charcoal;
+        padding: 0px 10px;
+      }
+    }
+  }}
+
 .zine-page--empty {
   display: none;
 }
 
-.zine-page:last-of-type {
-  color: $white;
-  padding: 20px 0;
-  vertical-align:bottom;
-}
-
-
-
 @media screen {
+  body {
+    font-size: 16px;
+  }
   .zine {
     background: $blue-charcoal;
     margin-top: 30px;
@@ -85,13 +104,13 @@
 }
 
 @media print {
-  @page {
-    size: landscape;
+  body {
+    font-size: 9pt;
+    margin:auto;
   }
 
-  body {
-    font-size: 70%;
-    margin:auto;
+  @page {
+    size: landscape;
   }
 
   a {
@@ -111,14 +130,16 @@
     align-items: stretch;
     figcaption {
       color: $comet;
+      font-size: 50%;
+      margin: 0;
     }
     .captioned-img {
       max-height: 90%;
-      padding-bottom: 0.5rem;
+      padding: 0.1rem 0.5rem 0.1rem;
     }
     .footer-contents {
       color: $blue-charcoal;
-      font-size: 130%;
+      font-size: 40%;
       margin-top: 0;
       margin: 32vh 20px;
     }
@@ -145,12 +166,11 @@
 
   .zine--sheet {
     grid-template-areas:
-    "page-5 page-4 page-3 page-2"
-      "page-6 page-7 page-8 page-1";
+      "page-5 page-4 page-3 page-2"
+        "page-6 page-7 page-8 page-1";
 
     .page-5, .page-4, .page-3, .page-2 {
       transform: rotate(180deg);
     }
   }
- 
 }

@@ -21,10 +21,10 @@ pages = data.issue2.pages
 </nav>
 
 <main class="zine-sheet-count-<%= (pages.length.to_f / 8).ceil.to_i %>">
-<%= partial "sheet", locals: { pages: pages[0..7], sheet: 1, asset_dir: asset_dir } %>
-<% if pages.length > 8 %>
-  <%= partial "sheet", locals: { pages: pages[8..-1], sheet: 2, asset_dir: asset_dir } %>
-<% end %>
+  <%= partial "sheet", locals: { pages: pages[0..7], sheet: 1, asset_dir: asset_dir } %>
+  <% if pages.length > 8 %>
+    <%= partial "sheet", locals: { pages: pages[8..-1], sheet: 2, asset_dir: asset_dir } %>
+  <% end %>
 </main>
 <script type="text/javascript">
  document.addEventListener("DOMContentLoaded", function() {
