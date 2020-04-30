@@ -38,7 +38,7 @@
     @include page-image;
   }
 
-  footer{
+  .zine-page:last-of-type {
     color: $white;
     padding: 20px 0;
     vertical-align:bottom;
@@ -83,13 +83,6 @@
     text-decoration: none;
   }
 
-  .zine-page--last {
-    .footer-contents {
-      margin-top: 0;
-      margin: 32vh 20px;
-    }
-  }
-
   .zine {
     width: 100vw;
     height: 100vh;
@@ -113,6 +106,8 @@
     }
     .footer-contents {
       font-size: 130%;
+      margin-top: 0;
+      margin: 32vh 20px;
     }
   }
 
@@ -131,7 +126,7 @@
     }
   }
 
-  .zine--1-sheeter {
+  .zine--sheet {
     grid-template-areas:
     "page-5 page-4 page-3 page-2"
       "page-6 page-7 page-8 page-1";
@@ -139,9 +134,6 @@
     .page-5, .page-4, .page-3, .page-2 {
       transform: rotate(180deg);
     }
-  }
-
-  .zine--2-sheeter {
   }
 
 }
