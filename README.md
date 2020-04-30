@@ -21,7 +21,6 @@ For example, our `data/issue1.json` looks like this.
 ```json
 {
   "asset_dir": "issue1/",
-  "number_of_sheets": 1,
   "pages": [
     {
       "title": "Nikki Thayer",
@@ -48,6 +47,40 @@ Let's assume the next issue is #2.
 That should be it.
 
 You can run `bundle exec rake serve` (or `bundle exec middleman server`) to see the local version (at `http://localhost:4567`).
+
+### NOTES about the data file
+
+The shape of every entry in your `issue.json` file *must* be the same.
+```json
+{
+  "partial_name": "",
+  "title": "",
+  "image":  "",
+  "author":  ""
+}
+```
+The values can all be empty which will generate an empty page, but they must all
+be present for each entry.
+
+For images, the `image` should live under the specified `asset_dir` as noted above.
+For text (poetry, prose or other general html content), you can use `partial_name`
+to specify the partial that contains that content.  Partials can be in the `/source`
+directory.  The filename should start with an underscore but you don't need an
+underscore in the data file.
+
+For example, an entry like
+```json
+{
+  "partial_name": "issue2/poem",
+  "title": "",
+  "image":  "",
+  "author":  ""
+}
+```
+
+will load `source/issue2/_poem.erb` content up for that page.  You may have to add
+styling to the scss files to accommodate.  We use this system to load the footer
+on the last page.
 
 Deployment
 ----------

@@ -1,0 +1,18 @@
+<% # expects pages array and sheet # and asset_dir %>
+<section class="zine zine--sheet zine--sheet-<%= sheet %>">
+  <% pages.each_with_index do |page, index| %>
+    <% if page.partial_name.present? %>
+      <section class="zine-page page-<%= index + 1 %>">
+        <%= partial(page.partial_name) %>
+        <% if page.author.present? %>
+          <figcaption><%= page.author %></figcaption>
+        <% end %>
+      </section>
+    <% else %>
+      <section class="zine-page page-<%= index + 1 %> <%= page.image.present? ? "" : "zine-page--empty" %>">
+        <%= image_tag( asset_dir + page.image, class: "captioned-img", alt: page.title ) %>
+        <figcaption><%= page.author %></figcaption>
+      </section>
+    <% end  %>
+  <% end  %>
+</section>

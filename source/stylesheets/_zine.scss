@@ -11,6 +11,9 @@
 }
 
 .zine {
+  + .zine {
+    margin-top: 0;
+  }
   .zine-li:before {
     content: '\21D2';
     margin-left: -20px;
@@ -34,7 +37,7 @@
     margin: 0 2rem 0 2rem;
   }
 
-  .zine-page:first-of-type {
+  .zine-page.page-1 {
     /* no by-line for the cover */
     figcaption {
       display: none;
@@ -43,12 +46,6 @@
 
   .full-img {
     @include page-image;
-  }
-
-  .zine-page:last-of-type {
-    color: $white;
-    padding: 20px 0;
-    vertical-align:bottom;
   }
 
   .footer-contents {
@@ -60,6 +57,18 @@
     color: $red-orange;
   }
 }
+
+.zine-page--empty {
+  display: none;
+}
+
+.zine-page:last-of-type {
+  color: $white;
+  padding: 20px 0;
+  vertical-align:bottom;
+}
+
+
 
 @media screen {
   .zine {
@@ -123,8 +132,12 @@
     overflow: hidden;
   }
 
+  .zine-page--empty {
+    display: block;
+  }
+
   /* support for 2 sheets */
-  @for $i from 1 through 16 {
+  @for $i from 1 through 8 {
     .page-#{$i} {
       grid-area: page-#{$i};
     }
@@ -139,5 +152,5 @@
       transform: rotate(180deg);
     }
   }
-
+ 
 }

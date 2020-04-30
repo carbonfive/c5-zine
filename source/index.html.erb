@@ -4,7 +4,7 @@
 
 <%
 asset_dir = data.issue2.asset_dir
-page = data.issue2.pages[0]
+pages = data.issue2.pages
 %>
 
 <nav class="nav">
@@ -20,21 +20,12 @@ page = data.issue2.pages[0]
   </ol>
 </nav>
 
-<section class="zine zine--sheet">
-  <% data.issue2.pages[0..7].each_with_index do |page, index| %>
-    <% if page.partial_name.present? %>
-      <section class="zine-page page-<%= index + 1 %>">
-        <%= partial(page.partial_name) %>
-      </section>
-    <% else %>
-      <section class="zine-page page-<%= index + 1 %>">
-        <%= image_tag( asset_dir + page.image, class: "captioned-img", alt: page.title ) %>
-        <figcaption><%= page.author %></figcaption>
-      </section>
-    <% end  %>
-  <% end  %>
-</section>
-
+<main class="zine-sheet-count-<%= (pages.length.to_f / 8).ceil.to_i %>">
+<%= partial "sheet", locals: { pages: pages[0..7], sheet: 1, asset_dir: asset_dir } %>
+<% if pages.length > 8 %>
+  <%= partial "sheet", locals: { pages: pages[8..-1], sheet: 2, asset_dir: asset_dir } %>
+<% end %>
+</main>
 <script type="text/javascript">
  document.addEventListener("DOMContentLoaded", function() {
    document.querySelector(".nav-item__print-button").addEventListener("click", function() { window.print(); } );
