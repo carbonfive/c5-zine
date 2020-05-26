@@ -1,0 +1,23 @@
+{
+  "asset_dir": "issue3/",
+  "pages": [
+    {
+      "partial_name": "",
+      "title": "Shelter In Place",
+      "image":  "shelter-in-place-mr-rogers.png",
+      "author" : "Mr Rogers"
+    },
+    {
+      "partial_name": "",
+      "title": "",
+      "image":  "family-bike_5animated.gif",
+      "author":  "Nikki Thayer"
+    },
+    {
+      "partial_name": "",
+      "title": "",
+      "image":  "hanginthere-illustrator-small.gif",
+      "author":  "Mr Rogers"
+    }
+  ]
+}
