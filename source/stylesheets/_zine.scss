@@ -35,15 +35,7 @@
     color: $white;
     padding: 0;
     margin: 0 2rem 0 2rem;
-    display: flex;
-    justify-content: space-between;
-  }
 
-  .zine-figcaption__qrcode {
-    background-color: red;
-    padding: 3px;
-    height: 64px;
-    width: 64px;
   }
   .zine-page.page-1 {
     /* no by-line for the cover */
@@ -67,7 +59,51 @@
   }
 }
 
+.past-issues {
+  color: $comet;
+  display: flex;
+  padding: 10px 30px;
+  margin: auto;
+  margin: 0;
+}
+
+.past-issues__link {
+  color: $blue-haze;
+  height: 23px;
+  width: 30px;
+  border: 1px solid $comet;
+  border-radius: 2px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 5px;
+}
+
+.footer {
+
+  .footer-contents {
+    padding: 10px 30px;
+    margin: auto;
+    margin: 0;
+    color: $white;
+    font-weight: 700;
+    font-size: 140%;
+  }
+  .hashtag {
+    color: $red-orange;
+  }
+
+  @media print {
+    .footer-contents {
+      font-size: 120%;
+      color: $blue-charcoal;
+      padding: 0px 10px;
+    }
+  }
+}
+
 .zine {
+
   .special-issue-2-footer {
     .footer-contents {
       padding: 10px 30px;
@@ -163,6 +199,11 @@
 
   .zine-page--empty {
     display: block;
+  }
+
+  .footer,
+  .past-issues {
+    display: none;
   }
 
   /* support for 2 sheets */

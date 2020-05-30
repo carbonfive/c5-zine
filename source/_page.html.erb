@@ -1,5 +1,4 @@
 <% # expects page_data, index and asset_dir %>
-<% qrcode = RQRCode::QRCode.new("eat it").as_svg(module_size: 3) %>
 <% if page_data.partial_name.present? %>
   <section class="zine-page page-<%= index + 1 %>">
     <%= partial(page_data.partial_name) %>
@@ -11,9 +10,7 @@
   <section class="zine-page page-<%= index + 1 %> <%= page_data.image.present? ? "" : "zine-page--empty" %>">
     <figure>
     <%= image_tag( asset_dir + page_data.image, class: "captioned-img", alt: page_data.title ) %>
-      <figcaption>
-        <div class="zine-figcaption__qrcode"><%= qrcode %></div>
-        <div class="zine-figcaption__author" ><%= page_data.author %></div>
+      <figcaption><%= page_data.author %></div>
       </figcaption>
     </figure>
   </section>

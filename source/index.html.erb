@@ -26,6 +26,10 @@ pages = data.issue3.pages
     <%= partial "sheet", locals: { pages: pages[8..-1], sheet: 2, asset_dir: asset_dir } %>
   <% end %>
 </main>
+<footer class="footer">
+  <%= partial("footer_page") %>
+</footer>
+
 <script type="text/javascript">
  document.addEventListener("DOMContentLoaded", function() {
    document.querySelector(".nav-item__print-button").addEventListener("click", function() { window.print(); } );

@@ -3,19 +3,25 @@
   "pages": [
     {
       "partial_name": "",
-      "title": "Shelter In Place",
-      "image":  "shelter-in-place-mr-rogers.png",
+      "title": "Where You At?",
+      "image":  "where-you-at-cover.png",
       "author" : "Mr Rogers"
     },
     {
       "partial_name": "",
-      "title": "",
+      "title": "Mental hopscotch",
+      "image":  "mental-hopscotch.png",
+      "author":  "Shannon Croy"
+    },
+    {
+      "partial_name": "",
+      "title": "I never liked flowers anyway",
       "image":  "family-bike_5animated.gif",
       "author":  "Nikki Thayer"
     },
     {
       "partial_name": "",
-      "title": "",
+      "title": "Hang in there",
       "image":  "hanginthere-illustrator-small.gif",
       "author":  "Mr Rogers"
     }
