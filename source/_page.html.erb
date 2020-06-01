@@ -1,0 +1,17 @@
+<% # expects page_data, index and asset_dir %>
+<% if page_data.partial_name.present? %>
+  <section class="zine-page page-<%= index + 1 %>">
+    <%= partial(page_data.partial_name) %>
+    <% if page_data.author.present? %>
+      <figcaption><%= page_data.author %></figcaption>
+    <% end %>
+  </section>
+<% else %>
+  <section class="zine-page page-<%= index + 1 %> <%= page_data.image.present? ? "" : "zine-page--empty" %>">
+    <figure>
+    <%= image_tag( asset_dir + page_data.image, class: "captioned-img", alt: page_data.title ) %>
+      <figcaption><%= page_data.author %></div>
+      </figcaption>
+    </figure>
+  </section>
+<% end  %>
