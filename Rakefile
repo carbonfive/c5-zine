@@ -1,6 +1,6 @@
 desc "Deploy with mgd"
 task :deploy do
-  system("mgd --branch main")
+  system("mgd")
 end
 
 desc "Run middleman server"
