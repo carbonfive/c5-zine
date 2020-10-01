@@ -1,6 +1,0 @@
-<% # expects pages array and sheet # and asset_dir %>
-<section class="zine zine--sheet zine--sheet-<%= sheet %>">
-  <% pages.each_with_index do |page, index| %>
-    <%= partial('page', locals: { page_data: page, index: index, asset_dir: asset_dir} ) %>
-  <% end  %>
-</section>
