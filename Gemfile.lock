@@ -37,9 +37,6 @@ GEM
       rb-fsevent (~> 0.9, >= 0.9.4)
       rb-inotify (~> 0.9, >= 0.9.7)
     memoist (0.16.2)
-    mgd (0.2.0)
-      middleman (>= 3.0.0)
-      trollop (= 2.1.2)
     middleman (4.3.7)
       coffee-script (~> 2.2)
       haml (>= 4.0.5)
@@ -99,7 +96,6 @@ GEM
     thor (1.0.1)
     thread_safe (0.3.6)
     tilt (2.0.10)
-    trollop (2.1.2)
     tzinfo (1.2.7)
       thread_safe (~> 0.1)
     uglifier (3.2.0)
@@ -109,7 +105,6 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  mgd (~> 0.2.0)
   middleman (~> 4.2)
   middleman-autoprefixer (~> 2.7)
   rake (~> 13.0)
