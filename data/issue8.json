@@ -1,0 +1,19 @@
+{
+  "asset_dir": "issue8/",
+  "pages": [
+    {
+      "partial_name": "",
+      "title": "Distracted",
+      "image": "distracted_redshift.png",
+      "author": "Mr Rogers"
+    },
+    { "author": "Ryan Workman", "image": "distracted-cropped2.png" },
+    { "author": "Nikki Thayer", "image": "mgz-october-nikki.gif" },
+    { "author": "Sidney Keese", "image": "mfz-007.png" },
+    { "author": "Mr Rogers", "image": "distracted_anim.gif" },
+    { "author": "Rico Rodriquez Collins", "image": "rico-2020.png" },
+    { "author": "Christopher Bragg (Guest)", "image": "distraction.png" },
+    { "author": "Zuhra (Guest)", "image": "signal-2020-10-27-113504.jpg" },
+    { "author": "Keith Gurtzweiler (Guest)", "image": "SFV_Crow.png" }
+  ]
+}

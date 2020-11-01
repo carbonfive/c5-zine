@@ -43,7 +43,7 @@
     margin: 0 2rem 0 2rem;
 
   }
-  .zine-page.page-1 {
+  &.zine--sheet-1 .zine-page.page-1 {
     /* no by-line for the cover */
     figcaption {
       display: none;
