@@ -7,19 +7,6 @@ asset_dir = data.issue1.asset_dir
 page = data.issue1.pages[0]
 %>
 
-<nav class="nav">
-  <ol class="nav__items">
-    <li class="nav-item nav-item__print">
-      <button class="nav-item__print-button" title="Print Me!" ><i class="nav-item__print-button-icon"></i></button>
-    </li>
-    <li class="nav-item nav-item__info">
-      <a class="nav-item__info-link" href="/info" target="_blank">
-        <i class="nav-item__info-icon"></i>
-      </a>
-    </li>
-  </ol>
-</nav>
-
 <main class="zine zine--sheet">
   <header class="zine-page page-1">
     <%= image_tag( asset_dir + page.image, class: "full-img", alt: page.title ) %>
