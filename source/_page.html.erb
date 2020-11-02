@@ -1,18 +1,22 @@
 <% # expects page_data, index and asset_dir %>
 <% page_class = "zine-page page-#{index + 1}" %>
-<section class="<%= page_class %>">
-  <% if page_data.partial_name.present? %>
-    <%= partial(page_data.partial_name) %>
-    <% if page_data.author.present? %>
-      <figcaption><%= page_data.author %></figcaption>
-    <% end %>
-  <% elsif page_data.blank %>
+<% if page_data.blank %>
+  <section class="<%= page_class %> .zine-page--empty ">
     <div style="visibility: hidden">This page intentionally left blank</div>
-  <% else %>
-    <figure>
-      <%= image_tag( asset_dir + page_data.image, class: "captioned-img", alt: page_data.title ) %>
-      <figcaption><%= page_data.author %></div>
-      </figcaption>
-    </figure>
-  <% end  %>
-</section>
+  </section>
+<% else %>
+  <section class="<%= page_class %>">
+    <% if page_data.partial_name.present? %>
+      <%= partial(page_data.partial_name) %>
+      <% if page_data.author.present? %>
+        <figcaption><%= page_data.author %></figcaption>
+      <% end %>
+    <% else %>
+      <figure>
+        <%= image_tag( asset_dir + page_data.image, class: "captioned-img", alt: page_data.title ) %>
+        <figcaption><%= page_data.author %></div>
+        </figcaption>
+      </figure>
+    <% end  %>
+  </section>
+<% end %>
