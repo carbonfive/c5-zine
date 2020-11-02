@@ -1,4 +1,10 @@
 /* CSS files add styling rules to your content */
+.footer {
+  margin-bottom: 30px; }
+
+.zine * {
+  color: #fff; }
+
 .zine + .zine {
   margin-top: 0; }
 
@@ -25,7 +31,6 @@
 .zine figcaption {
   font-size: 100%;
   text-align: right;
-  color: #fff;
   padding: 0;
   margin: 0 2rem 0 2rem; }
 
@@ -142,11 +147,14 @@
     grid-template-columns: 1fr 1fr 1fr 1fr;
     justify-items: stretch;
     align-items: stretch; }
+    .zine * {
+      color: #fff; }
     .zine figcaption {
       color: #5D5681;
       font-size: 100%;
       margin: 0 10px 0 0; }
     .zine .captioned-img {
+      color: #222020;
       max-height: 90%;
       padding: 0.1rem 0.5rem 0.1rem; }
     .zine .footer-contents {
