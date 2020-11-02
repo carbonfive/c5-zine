@@ -53,7 +53,15 @@ You can run `bundle exec rake serve` (or `bundle exec middleman server`) to see 
 
 ### NOTES about the data file
 
-The shape of every entry in your `issue.json` file *must* be the same.
+The shape of every entry in your `issue.json` file can include `partial_name` - if present, the page will be rendered from the partial.
+
+It can include `blank: true`.  If set, this will enter a blank page in the DOM.
+
+Most typically it should include:
+* `title` - used as the image title
+* `author` - used for the byline
+* `image` - the image file name - expected to be under `source/images/issue#/`
+
 ```json
 {
   "partial_name": "",
@@ -62,8 +70,6 @@ The shape of every entry in your `issue.json` file *must* be the same.
   "author":  ""
 }
 ```
-The values can all be empty which will generate an empty page, but they must all
-be present for each entry.
 
 For images, the `image` should live under the specified `asset_dir` as noted above.
 For text (poetry, prose or other general html content), you can use `partial_name`
@@ -94,5 +100,3 @@ This task simply runs `mgd`
 `bundle exec rake deploy`
 
 Visit the newly deployed site at `https://carbonfive.github.io/c5-zine`
-
-   
