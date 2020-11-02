@@ -15,6 +15,9 @@
 }
 
 .zine {
+  * {
+    color: $white;
+  }
   + .zine {
     margin-top: 0;
   }
@@ -36,7 +39,6 @@
   figcaption {
     font-size: 100%;
     text-align:right;
-    color: $white;
     padding: 0;
     margin: 0 2rem 0 2rem;
 
@@ -128,7 +130,8 @@
         padding: 0px 10px;
       }
     }
-  }}
+  }
+}
 
 .zine-page--empty {
   display: none;
@@ -176,12 +179,16 @@
     grid-template-columns: 1fr 1fr 1fr 1fr;
     justify-items: stretch;
     align-items: stretch;
+    * {
+      color: $white;
+    }
     figcaption {
       color: $comet;
       font-size: 100%;
       margin: 0 10px 0 0;
     }
     .captioned-img {
+      color: #222020;
       max-height: 90%;
       padding: 0.1rem 0.5rem 0.1rem;
     }
