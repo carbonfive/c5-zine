@@ -7,19 +7,6 @@ asset_dir = data.issue5.asset_dir
 pages = data.issue5.pages
 %>
 
-<nav class="nav">
-  <ol class="nav__items">
-    <li class="nav-item nav-item__print">
-      <button class="nav-item__print-button" title="Print Me!" ><i class="nav-item__print-button-icon"></i></button>
-    </li>
-    <li class="nav-item nav-item__info">
-      <a class="nav-item__info-link" href="info" target="_blank">
-        <i class="nav-item__info-icon"></i>
-      </a>
-    </li>
-  </ol>
-</nav>
-
 <main class="zine-sheet-count-<%= (pages.length.to_f / 8).ceil.to_i %>">
   <%= partial "sheet", locals: { pages: pages[0..7], sheet: 1, asset_dir: asset_dir } %>
   <% if pages.length > 8 %>

@@ -9,17 +9,26 @@ function attachPrintListener() {
 
 // fix up links for github pages deployment
 function directoryDepth(path) {
-  return path.match(/(\/)/).length - 1;
+  return path.split("/").length - 1;
 }
 
 function attachPastLinkListener() {
+  if (window.location.pathname === "/") {
+    // we're at root - no need to fix links
+    return;
+  }
+  const curPath = window.location.pathname;
   document
-    .querySelectorAll(".past-issues__link[href]")
+    .querySelectorAll(".past-issues__link[href], .nav-item__info-link[href]")
     .forEach(function (link) {
-      if (directoryDepth(window.location.pathname) > 0) {
-        const directories = window.location.pathname.split("/").slice(0, -2);
+      const depth = directoryDepth(curPath);
+      if (depth > 0) {
+        const directories = curPath.split("/").slice(1, depth - 1);
         directories.push(link.getAttribute("href"));
-        const newPath = directories.join("/");
+        let newPath = "/" + directories.join("/");
+        if (newPath === "//") {
+          newPath = "/";
+        }
         link.addEventListener("click", function (ev) {
           ev.preventDefault();
           window.location.href = newPath;
