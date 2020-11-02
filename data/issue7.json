@@ -2,52 +2,34 @@
   "asset_dir": "issue7/",
   "pages": [
     {
-      "partial_name": "",
       "title": "Fall 2020",
-      "image":  "fall-napping-cover.png",
-      "author" : "Mr Rogers"
+      "image": "fall-napping-cover.png",
+      "author": "Mr Rogers"
     },
     {
-      "partial_name": "",
-      "title": "",
-      "image":  "",
-      "author" : ""
+      "blank": true
     },
     {
-      "partial_name": "",
-      "title": "",
-      "image":  "fall-nikki.png",
-      "author" : "Nikki Thayer"
+      "image": "fall-nikki.png",
+      "author": "Nikki Thayer"
     },
     {
-      "partial_name": "",
-      "title": "",
-      "image":  "fall-in-hole.png",
-      "author" : "Mr Rogers"
+      "image": "fall-in-hole.png",
+      "author": "Mr Rogers"
     },
     {
-      "partial_name": "",
-      "title": "",
-      "image":  "mfz-september-nikki.png",
-      "author" : "Nikki Thayer"
+      "image": "mfz-september-nikki.png",
+      "author": "Nikki Thayer"
     },
     {
-      "partial_name": "",
-      "title": "",
-      "image":  "",
-      "author" : ""
+      "blank": true
     },
     {
-      "partial_name": "",
-      "title": "",
-      "image":  "fall-shannon.png",
-      "author" : "Shannon Wells"
+      "image": "fall-shannon.png",
+      "author": "Shannon Wells"
     },
     {
-      "partial_name": "",
-      "title": "",
-      "image":  "",
-      "author" : ""
+      "blank": true
     }
   ]
 }
