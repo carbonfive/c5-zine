@@ -1,6 +1,0 @@
-{
-  "dependencies": {
-    "autoprefixer": "^10.0.0",
-    "surge": "^0.21.3"
-  }
-}
