@@ -4,14 +4,10 @@
       <button class="nav-item__print-button" title="Print Me!" ><i class="nav-item__print-button-icon"></i></button>
     </li>
     <li class="nav-item nav-item__info">
-      <a class="nav-item__info-link" href="info" target="_blank">
-        <i class="nav-item__info-icon"></i>
-      </a>
+      <%= link_to '<i class="nav-item__info-icon"></i>', "info", class: "nav-item__info-link", target:"_blank" %>
     </li>
     <li class="nav-item nav-item__info">
-      <a class="nav-item__info-link" href="/" target="_blank">
-        <i class="nav-item__home-icon"></i>
-      </a>
+      <%= link_to '<i class="nav-item__home-icon"></i>', "/", class: "nav-item__info-link", target:"_blank" %>
     </li>
   </ol>
 </nav>
