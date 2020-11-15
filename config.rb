@@ -1,6 +1,5 @@
 # Activate and configure extensions
 # https://middlemanapp.com/advanced/configuration/#configuring-extensions
-
 activate :autoprefixer do |prefix|
   prefix.browsers = "last 2 versions"
 end
@@ -51,3 +50,4 @@ page '/*.txt', layout: false
 activate :directory_indexes
 activate :relative_assets
 activate :asset_hash
+set :relative_links, true
