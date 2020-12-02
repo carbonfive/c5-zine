@@ -1,0 +1,29 @@
+{
+  "asset_dir": "issue9/",
+  "pages": [
+    {
+      "partial_name": "",
+      "title": "Family",
+      "image": "family-cover.png",
+      "author": "Mr Rogers"
+    },
+    { "blank": true },
+    { "author": "Nikki Thayer", "image": "family-nicole.jpg" },
+    {
+      "author": "Josh Hou",
+      "title": "Longing for Spring Breeze",
+      "partial_name": "issue9/longing_for_spring_breeze"
+    },
+    { "author": "Gabrielle Taylor", "image": "family-gabrielle.jpg" },
+    {
+      "author": "Shannon Wells",
+      "image": "Freddie-shannon-wells.png",
+      "title": "Freddie"
+    },
+    {
+      "author": "Mr Rogers",
+      "image": "family-rocket.png",
+      "title": "Family Vacation 2020"
+    }
+  ]
+}
