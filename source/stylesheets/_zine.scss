@@ -137,6 +137,10 @@
   display: none;
 }
 
+.embed-youtube {
+  margin: 20px auto 20px;
+}
+
 @media screen {
   body {
     font-size: 16px;
@@ -158,6 +162,20 @@
   body {
     font-size: 9pt;
     margin:auto;
+  }
+  .embed-youtube {
+    iframe {
+      display: none;
+    }
+    &:after {
+      width: 70%;
+      font-size: 1.4em;
+      content: "This musical interlude is not available in print form";
+      color: $blue-haze;
+      display: flex;
+      margin: 50% auto 0;
+      transform: translateY(-50%);
+    }
   }
 
   @page {
