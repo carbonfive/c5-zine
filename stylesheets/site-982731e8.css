@@ -309,13 +309,15 @@
   background-image: url("../images/finished-book-1d82bd0c.svg"); }
 
 .poetry {
+  background-color: #fff;
+  color: #000f1f;
   font-family: freight-display-pro, serif;
   font-weight: 700;
   font-style: normal;
   padding: 40px;
-  margin-bottom: 20px;
-  color: #000f1f;
-  background-color: #fff; }
+  margin-bottom: 20px; }
+  .poetry * {
+    color: #000f1f; }
   .poetry em {
     font-style: italic; }
   @media print {
@@ -323,6 +325,7 @@
       font-size: 80%;
       padding: 0 20px; } }
 .poetry__title {
+  color: #000f1f;
   font-size: 160%; }
 
 .nav ul, .nav ol {
