@@ -1,0 +1,33 @@
+{
+  "asset_dir": "issue10/",
+  "pages": [
+    {
+      "partial_name": "",
+      "title": "",
+      "author": "Mr Rogers",
+      "image": "the-long-dark-cover.png"
+    },
+    { "blank": true },
+    {
+      "partial_name": "",
+      "title": "",
+      "author": "Nikki Thayer",
+      "image": "nikki-10.jpg"
+    },
+    { "blank": true },
+    {
+      "partial_name": "",
+      "title": "",
+      "author": "Mr Rogers",
+      "image": "letter-to-2020.png"
+    },
+    { "blank": true },
+    {
+      "partial_name": "",
+      "title": "",
+      "author": "Trish Tunney (guest)",
+      "image": "trish-sneaky.png"
+    },
+    { "blank": true }
+  ]
+}
