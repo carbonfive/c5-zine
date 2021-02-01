@@ -1,0 +1,17 @@
+{
+  "asset_dir": "issue11/",
+  "pages": [
+    { "author": "Nicole Taylor", "image": "cover.png" },
+    { "author": "Gintel Gee", "image": "Issue11_rain_v2.jpg" },
+    { "author": "Wil Wade", "image": "2021-01-rain-p-wil-wade.png" },
+    { "author": "Gabrielle Taylor", "image": "IMG_0751-gabrielle-taylor.jpg" },
+    { "author": "Shannon Wells", "image": "Rain-shannon-wells.png" },
+    { "author": "Emily Mi", "image": "raindrops-emily-mi.jpg" },
+    {
+      "author": "Josh Hou and Nicole Thayer",
+      "title": "Rain",
+      "partial_name": "issue11/rain"
+    },
+    { "author": "Mr Rogers", "image": "elephant-and-mouse.png" }
+  ]
+}
