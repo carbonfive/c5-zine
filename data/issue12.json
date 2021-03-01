@@ -1,0 +1,33 @@
+{
+    "asset_dir": "issue12/",
+    "pages": [
+        {
+            "image": "dawn-cover.jpg",
+            "author": "Nicole Thayer"
+        },
+        {
+            "image": "Issue12_Dawn-gintel.jpg",
+            "author": "Gintel Gee"
+        },
+        {
+            "image": "mfz_feb_3-nikki.gif",
+            "author": "Nicole Thayer"
+        },
+        {
+            "image": "Untitled-164-erin.gif",
+            "author": "Erin Murphy"
+        },
+        {
+            "image": "Dawn-Zine-Shannon.jpg",
+            "author": "Shannon Wells"
+        },
+        {
+            "image": "bunnymatic_dawn.png",
+            "author": "Mr Rogers"
+        },
+        {
+            "image": "mfz-sidney.jpg",
+            "author": "Sidney Keese"
+        }
+    ]
+}
