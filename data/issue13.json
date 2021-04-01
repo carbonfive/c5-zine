@@ -1,0 +1,17 @@
+{
+  "asset_dir": "issue13/",
+  "pages": [
+    { "author": "Nicole Taylor", "image": "cover_issue13.jpeg" },
+    { "blank": true },
+    { "author": "Mr Rogers", "image": "thisway.png" },
+    { "blank": true },
+    { "author": "Gintel Gee", "image": "fullcircle_zine.jpg" },
+    {
+      "author": "Nicole Thayer",
+      "title": "Full Circle",
+      "partial_name": "issue13/full_circle_nikki"
+    },
+    { "author": "Wil Wade", "image": "wilwade-full-circle.png" },
+    { "blank": true }
+  ]
+}
