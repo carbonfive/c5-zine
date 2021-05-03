@@ -1,11 +1,13 @@
-<%= num_past_issues = 12 %>
+<%= num_past_issues = 13 %>
 %><div class="footer-contents">
   Now taking submissions at <br><span class="hashtag">#my-forthcoming-zine</span>
 </div>
 <div class="past-issues">
-  Past Issues:
+  <div class="past-issues__header">Past Issues:</div>
+  <div class="past-issues__navigation">
   <% num_past_issues.times.map do |idx| %>
     <% issue_number = num_past_issues - idx %>
     <%= link_to issue_number, "issue#{issue_number}", class: "past-issues__link" %>
   <% end %>
+  </div>
 </div>
