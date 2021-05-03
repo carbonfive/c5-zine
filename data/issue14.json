@@ -1,0 +1,17 @@
+{
+  "asset_dir": "issue14/",
+  "pages": [
+    { "author": "Mr Rogers", "image": "cover.png" },
+    { "blank": true },
+    { "author": "Nicole Thayer", "image": "twist-and-shout-nikki.gif" },
+    { "author": "Wil Wade", "image": "twist-quad-wil.gif" },
+    {
+      "author": "Rico Rodriquez Collins",
+      "title": "Duck",
+      "partial_name": "issue14/ducks_rico"
+    },
+    { "author": "Mr Rogers", "image": "jump-in-the-park-mr-rogers.png" },
+    { "author": "Gintel Gee", "image": "twistnshout_gintel.gif" },
+    { "blank": true }
+  ]
+}

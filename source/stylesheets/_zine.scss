@@ -67,10 +67,15 @@
 
 .past-issues {
   color: $comet;
-  display: flex;
   padding: 10px 30px;
   margin: auto;
   margin: 0;
+}
+.past-issues__header {
+  margin-bottom: 5px;
+}
+.past-issues__navigation {
+    display: flex;
 }
 
 .past-issues__link {
