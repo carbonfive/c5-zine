@@ -1,0 +1,13 @@
+{
+  "asset_dir": "issue15/",
+  "pages": [
+    { "author": "Nicole Thayer", "image": "summertime-cover.jpg" },
+    { "blank": true },
+    { "author": "Gintel Gee", "image": "summertime_zine-gg.jpg" },
+    { "blank": true },
+    { "author": "Mr Rogers", "image": "summertime-jr.png" },
+    { "blank": true },
+    { "author": "Nicole Thayer", "image": "summertime-nt-small.png" },
+    { "blank": true }
+  ]
+}
