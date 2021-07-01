@@ -1,0 +1,13 @@
+{
+  "asset_dir": "issue16/",
+  "pages": [
+    { "author": "Nicole Thayer", "image": "issue16_cover.png" },
+    { "blank": true },
+    { "author": "Gintel Gee", "image": "isthisnormal_zine-gintel.jpg" },
+    { "author": "Wil Wade", "image": "is-this-normal-wilwade.png" },
+    { "author": "Shannon Wells", "image": "IsThisNormal-shannon.png" },
+    { "author": "Nicole Thayer", "image": "normalcats-nikki.gif" },
+    { "author": "Mr Rogers", "image": "isthisnormal_mrrogers.png" },
+    { "blank": true }
+  ]
+}
