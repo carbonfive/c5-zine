@@ -1,0 +1,13 @@
+{
+  "asset_dir": "issue17/",
+  "pages": [
+    { "author": "Mr Rogers", "image": "issue17-cover-mr-rogers.png" },
+    { "blank": true },
+    { "author": "Nicole Thayer", "image": "whats-the-vibe-nikki.jpg" },
+    { "blank": true },
+    { "author": "Shannon Wells", "image": "whats-the-vibe-shannon.jpg" },
+    { "blank": true },
+    { "author": "Mr Rogers", "image": "this-is-fine-mr-rogers.png" },
+    { "blank": true }
+  ]
+}
