@@ -40,7 +40,20 @@ loop through images and build the new issue.
 
 ### Steps to build issue next.
 
+The short way:
+
+```
+./scripts/setup_next_issue.rb -p <previous issue number> -n <next issue number>
+```
+
+This will setup new directories and files for the new issue and move all the old into the right places.
+
+You'll want to edit the `title` of `./source/index.html.erb` because it'll have the old title, and update `_footer_page.erb` to include 1 more issue by incrementing `num_past_issues`.
+
+Then add your images and content and update `data/issue<new issue number>.json`
 Let's assume the next issue is #2.
+
+The long version (without the script):
 
 * Get your image files and content together.
 * Copy `source/index.html.erb` to `source/issue1.html.erb`
