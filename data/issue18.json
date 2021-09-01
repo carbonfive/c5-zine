@@ -1,0 +1,38 @@
+{
+  "asset_dir": "issue18/",
+  "pages": [
+    {
+      "title": "Time",
+      "image": "issue18cover.gif",
+      "author": "Nikki Thayer"
+    },
+    { "blank": true },
+    {
+      "partial_name": "issue18/laser",
+      "title": "",
+      "image": "",
+      "author": "Erin SwensonHealey"
+    },
+    { "blank": true },
+    {
+      "partial_name": "",
+      "title": "Gone Forever",
+      "image": "time-shannon.png",
+      "author": "Shannon Wells"
+    },
+    {
+      "partial_name": "",
+      "title": "Timeboxing",
+      "image": "timeboxing-nikki-thayer.gif",
+      "author": "Nikki Thayer"
+    },
+    { "blank": true },
+    {
+      "partial_name": "",
+      "title": "Are we there yet?",
+      "image": "time-mr-rogers.gif",
+      "author": "Mr Rogers"
+    },
+    { "blank": true }
+  ]
+}
