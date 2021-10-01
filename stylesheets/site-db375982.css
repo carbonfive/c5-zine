@@ -1,0 +1,449 @@
+/* CSS files add styling rules to your content */
+.footer {
+  margin-bottom: 30px; }
+
+.zine * {
+  color: #fff; }
+
+.zine + .zine {
+  margin-top: 0; }
+
+.zine .zine-li:before {
+  content: '\21D2';
+  margin-left: -20px;
+  margin-right: 10px; }
+
+.zine figure {
+  margin: 0;
+  padding: 0; }
+
+.zine .captioned-img {
+  -o-object-fit: contain;
+     object-fit: contain;
+  max-height: 100%;
+  max-width: 100%;
+  width: 100%;
+  padding: 1rem;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0 auto; }
+
+.zine figcaption {
+  font-size: 100%;
+  text-align: right;
+  padding: 0;
+  margin: 0 2rem 0 2rem; }
+
+.zine.zine--sheet-1 .zine-page.page-1 {
+  /* no by-line for the cover */ }
+  .zine.zine--sheet-1 .zine-page.page-1 figcaption {
+    display: none; }
+
+.zine .full-img {
+  -o-object-fit: contain;
+     object-fit: contain;
+  max-height: 100%;
+  max-width: 100%;
+  width: 100%;
+  padding: 1rem;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0 auto; }
+
+.zine .footer-contents {
+  color: #fff;
+  font-weight: 700;
+  font-size: 180%; }
+
+.zine .hashtag {
+  color: #ff4b27; }
+
+.past-issues {
+  color: #5D5681;
+  padding: 10px 30px;
+  margin: auto;
+  margin: 0;
+  font-size: 1em; }
+
+.past-issues__header {
+  margin-bottom: 5px; }
+
+.past-issues__navigation {
+  display: flex;
+  font-size: 0.8rem; }
+
+.past-issues__link {
+  color: #cfcbe2;
+  border-right: 1px solid #5D5681;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 8px; }
+  .past-issues__link:last-child {
+    border-right: none; }
+
+.footer .footer-contents {
+  padding: 10px 30px;
+  margin: auto;
+  margin: 0;
+  color: #fff;
+  font-weight: 700;
+  font-size: 120%; }
+
+.footer .hashtag {
+  color: #ff4b27; }
+
+@media print {
+  .footer .footer-contents {
+    font-size: 120%;
+    color: #000f1f;
+    padding: 0px 10px; } }
+
+.zine .special-issue-2-footer .footer-contents {
+  padding: 10px 30px;
+  margin: auto;
+  margin: 0;
+  color: #fff;
+  font-weight: 700;
+  font-size: 140%; }
+
+.zine .special-issue-2-footer .hashtag {
+  color: #ff4b27; }
+
+@media print {
+  .zine .special-issue-2-footer .footer-contents {
+    font-size: 120%;
+    color: #000f1f;
+    padding: 0px 10px; } }
+
+.zine-page--empty {
+  display: none; }
+
+.embed-youtube {
+  margin: 20px auto 20px; }
+
+@media screen {
+  body {
+    font-size: 16px; }
+  .zine {
+    background: #000f1f;
+    margin-top: 30px;
+    padding: 10px; }
+  .zine-page {
+    margin-top: 10px;
+    border-top: 3px double #000f1f;
+    padding-top: 10px; } }
+
+@media print {
+  body {
+    font-size: 9pt;
+    margin: auto; }
+  .embed-youtube iframe {
+    display: none; }
+  .embed-youtube:after {
+    width: 70%;
+    font-size: 1.4em;
+    content: "This musical interlude is not available in print form";
+    color: #cfcbe2;
+    display: flex;
+    margin: 50% auto 0;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%); }
+  @page {
+    size: landscape; }
+  a {
+    color: inherit;
+    text-decoration: none; }
+  .zine {
+    width: 100vw;
+    height: 100vh;
+    display: -ms-grid;
+    display: grid;
+    grid-gap: 2px 2px;
+    background: lightgrey;
+    -ms-grid-rows: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    -ms-grid-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    justify-items: stretch;
+    align-items: stretch; }
+    .zine * {
+      color: #fff; }
+    .zine figcaption {
+      color: #5D5681;
+      font-size: 100%;
+      margin: 0 10px 0 0; }
+    .zine .captioned-img {
+      color: #222020;
+      max-height: 90%;
+      padding: 0.1rem 0.5rem 0.1rem; }
+    .zine .footer-contents {
+      color: #000f1f;
+      font-size: 140%;
+      margin-top: 0;
+      margin: 32vh 20px; }
+  .zine-page {
+    display: block;
+    background: white;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    padding: 0.5vh;
+    overflow: hidden; }
+  .zine-page--empty {
+    display: block; }
+  .footer,
+  .past-issues {
+    display: none; }
+  /* support for 2 sheets */
+  .page-1 {
+    grid-area: page-1; }
+  .page-2 {
+    grid-area: page-2; }
+  .page-3 {
+    grid-area: page-3; }
+  .page-4 {
+    grid-area: page-4; }
+  .page-5 {
+    grid-area: page-5; }
+  .page-6 {
+    grid-area: page-6; }
+  .page-7 {
+    grid-area: page-7; }
+  .page-8 {
+    grid-area: page-8; }
+  .zine--sheet {
+        grid-template-areas: "page-5 page-4 page-3 page-2" "page-6 page-7 page-8 page-1"; }
+    .zine--sheet .page-5, .zine--sheet .page-4, .zine--sheet .page-3, .zine--sheet .page-2 {
+      -webkit-transform: rotate(180deg);
+              transform: rotate(180deg); } }
+
+@media print {
+  .page-1 {
+    -ms-grid-row: 2;
+    -ms-grid-column: 4; }
+  .page-2 {
+    -ms-grid-row: 1;
+    -ms-grid-column: 4; }
+  .page-3 {
+    -ms-grid-row: 1;
+    -ms-grid-column: 3; }
+  .page-4 {
+    -ms-grid-row: 1;
+    -ms-grid-column: 2; }
+  .page-5 {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1; }
+  .page-6 {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1; }
+  .page-7 {
+    -ms-grid-row: 2;
+    -ms-grid-column: 2; }
+  .page-8 {
+    -ms-grid-row: 2;
+    -ms-grid-column: 3; } }
+
+.info {
+  background: #000f1f;
+  margin-top: 30px;
+  padding-left: 10px 30px;
+  color: #fff;
+  width: 90%;
+  margin: auto; }
+
+.info-steps {
+  margin-bottom: 20px; }
+
+.info-steps__items {
+  padding: 0; }
+
+.info-steps__item {
+  margin-left: 1.1em;
+  margin-right: 1em; }
+
+.info-steps__item-image {
+  width: 100%; }
+
+.info-steps__item-image-container {
+  padding: 20px;
+  background-color: #ff4b27;
+  margin: 10px 0; }
+
+.info-steps__item--2 .info-steps__item-image {
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
+  min-height: 200px;
+  width: 100%;
+  display: flex;
+  background-image: url("../images/fold-in-half-first-51eac644.svg"); }
+
+.info-steps__item--3 .info-steps__item-image {
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
+  min-height: 200px;
+  width: 100%;
+  display: flex;
+  background-image: url("../images/fold-in-half-long-way-23990e7f.svg"); }
+
+.info-steps__item--5 .info-steps__item-image {
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
+  min-height: 200px;
+  width: 100%;
+  display: flex;
+  background-image: url("../images/folding-layout-f63325a3.svg"); }
+
+.info-steps__item--7 .info-steps__item-image {
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
+  min-height: 200px;
+  width: 100%;
+  display: flex;
+  background-image: url("../images/push-center-together-7988d9a2.svg"); }
+
+.info-steps__item--8 .info-steps__item-image {
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
+  min-height: 200px;
+  width: 100%;
+  display: flex;
+  background-image: url("../images/finished-book-1d82bd0c.svg"); }
+
+.poetry {
+  background-color: #fff;
+  color: #000f1f;
+  font-family: freight-display-pro, serif;
+  font-weight: 700;
+  font-style: normal;
+  padding: 40px;
+  margin-bottom: 20px; }
+  .poetry * {
+    color: #000f1f; }
+  .poetry em {
+    font-style: italic; }
+  @media print {
+    .poetry {
+      font-size: 80%;
+      padding: 0 20px; } }
+.poetry__title {
+  color: #000f1f;
+  font-size: 160%; }
+
+.prose {
+  background-color: #fff;
+  color: #000f1f;
+  font-family: freight-display-pro, serif;
+  font-weight: 700;
+  font-style: normal;
+  line-height: 1.8rem;
+  font-size: 1.4rem;
+  padding: 40px;
+  margin-bottom: 20px; }
+  .prose * {
+    color: #000f1f; }
+  @media print {
+    .prose {
+      font-size: 70%;
+      padding: 0 20px;
+      line-height: 1.2rem; } }
+.nav ul, .nav ol {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  list-style-type: none;
+  text-indent: 0; }
+
+.nav__items {
+  position: fixed;
+  display: flex;
+  flex-direction: row;
+  top: 20px;
+  right: 20px; }
+  @media (min-width: 768px) {
+    .nav__items {
+      top: 50px;
+      right: 50px;
+      flex-direction: column; } }
+.nav-item {
+  margin-left: 10px; }
+  @media (min-width: 768px) {
+    .nav-item {
+      margin-left: 0;
+      margin-bottom: 10px; } }
+  .nav-item:last {
+    margin-bottom: auto; }
+  .nav-item a {
+    background-color: #ffffee;
+    height: 46px;
+    width: 46px;
+    border-radius: 23px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #ead1dc;
+    flex: 1; }
+
+.nav-item__info-link {
+  font-size: 180%;
+  font-weight: 700; }
+
+.nav-item__print-button {
+  background-color: #ffffee;
+  height: 46px;
+  width: 46px;
+  border-radius: 23px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #ead1dc; }
+
+.nav-item__print-button-icon {
+  height: 36.8px;
+  width: 36.8px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center center;
+  background-image: url("../images/printer-icon-46c58177.svg"); }
+
+.nav-item__info-icon {
+  height: 36.8px;
+  width: 36.8px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center center;
+  background-image: url("../images/info-icon-26ccf32e.svg"); }
+
+.nav-item__home-icon {
+  height: 36.8px;
+  width: 36.8px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center center;
+  background-image: url("../images/home-icon-340c46f0.svg"); }
+
+@media print {
+  .nav {
+    display: none; } }
+
+button {
+  cursor: pointer; }
+
+a {
+  text-decoration: none;
+  color: #000f1f; }
+
+body {
+  font-family: "Futura","Helvetica",sans-serif;
+  margin: 0;
+  padding: 0; }
+
+@media screen {
+  body {
+    max-width: 40rem;
+    background: #000f1f;
+    margin: auto; } }
