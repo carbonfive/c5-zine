@@ -1,0 +1,37 @@
+{
+  "asset_dir": "issue19/",
+  "pages": [
+    {
+      "title": "Into the Void",
+      "image": "into-the-void-cover.png",
+      "author": "Mr Rogers"
+    },
+    { "blank": true },
+    {
+      "partial_name": "",
+      "title": "Dot Void",
+      "image": "dot-void-ari.png",
+      "author": "Ari Russo"
+    },
+    { "blank": true },
+    {
+      "partial_name": "",
+      "title": "Void",
+      "image": "void-black-wil.png",
+      "author": "Wil Wade"
+    },
+    {
+      "partial_name": "",
+      "title": "Into the Void",
+      "image": "into-the-void-shannon.png",
+      "author": "Shannon Wells"
+    },
+    {
+      "partial_name": "",
+      "title": "Take Flight",
+      "image": "take-flight.png",
+      "author": "Mr Rogers"
+    },
+    { "blank": true }
+  ]
+}
