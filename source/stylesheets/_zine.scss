@@ -70,24 +70,26 @@
   padding: 10px 30px;
   margin: auto;
   margin: 0;
+  font-size: 1em;
 }
 .past-issues__header {
   margin-bottom: 5px;
 }
 .past-issues__navigation {
-    display: flex;
+  display: flex;
+  font-size: 0.8rem;
 }
 
 .past-issues__link {
   color: $blue-haze;
-  height: 23px;
-  width: 30px;
-  border: 1px solid $comet;
-  border-radius: 2px;
+  border-right: 1px solid $comet;
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 0 5px;
+  padding: 0 8px;
+  &:last-child {
+    border-right: none;
+  }
 }
 
 .footer {
@@ -98,7 +100,7 @@
     margin: 0;
     color: $white;
     font-weight: 700;
-    font-size: 140%;
+    font-size: 120%;
   }
   .hashtag {
     color: $red-orange;
