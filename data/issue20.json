@@ -1,0 +1,37 @@
+{
+  "asset_dir": "issue20/",
+  "pages": [
+    {
+      "title": "Round Things",
+      "image": "roundthings_cover.png",
+      "author": "Mr Rogers"
+    },
+    { "blank": true },
+    {
+      "partial_name": "",
+      "title": "COVIDless Horseman",
+      "image": "COVIDless-Horseman.png",
+      "author": "Shannon Wells"
+    },
+    { "blank": true },
+    {
+      "partial_name": "",
+      "title": "Cats",
+      "image": "round-cats-gabby.jpg",
+      "author": "Gabrielle Taylor"
+    },
+    {
+      "partial_name": "",
+      "title": "Round things",
+      "image": "roundthings_zine_1031.jpg",
+      "author": "Gintel Gee"
+    },
+    {
+      "partial_name": "",
+      "title": "Cracked",
+      "image": "cracked.png",
+      "author": "Mr Rogers"
+    },
+    { "blank": true }
+  ]
+}
