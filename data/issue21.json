@@ -1,0 +1,32 @@
+{
+  "asset_dir": "issue21/",
+  "pages": [
+    {
+      "title": "Lines and Corners",
+      "image": "ArrowMan.png",
+      "author": "Shannon Wells"
+    },
+    { "blank": true },
+    {
+      "partial_name": "",
+      "title": "Where is my mind?",
+      "image": "where-is-my-mind.png",
+      "author": "Mr Rogers"
+    },
+    { "blank": true },
+    {
+      "partial_name": "",
+      "title": "",
+      "image": "linecorners_zine.jpg",
+      "author": "Gintel Gee"
+    },
+    { "blank": true },
+    {
+      "partial_name": "",
+      "title": "The End",
+      "image": "theend.png",
+      "author": "Mr Rogers"
+    },
+    { "blank": true }
+  ]
+}
