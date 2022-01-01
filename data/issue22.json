@@ -1,0 +1,30 @@
+{
+  "asset_dir": "issue22/",
+  "pages": [
+    {
+      "title": "Beginnings and Endings",
+      "image": "cover_nikki.png",
+      "author": "Nicole Thayer"
+    },
+    { "blank": true },
+    {
+      "title": "Tunnels",
+      "image": "tunnels-rescan.png",
+      "author": "Mr Rogers"
+    },
+    { "blank": true },
+    {
+      "title": "",
+      "image": "xmas_gabby.jpg",
+      "author": "Gabrielle Taylor"
+    },
+    { "blank": true },
+    {
+      "partial_name": "",
+      "title": "Same as it ever was",
+      "image": "same_as_it_ever_was.gif",
+      "author": "Nicole Thayer"
+    },
+    { "blank": true }
+  ]
+}
