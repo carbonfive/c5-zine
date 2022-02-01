@@ -1,0 +1,20 @@
+---
+"title": "C5 Zine - Issue 22 - Beginnings and Endings"
+---
+
+<%
+asset_dir = data.issue22.asset_dir
+pages = data.issue22.pages
+%>
+
+<main class="zine-sheet-count-<%= (pages.length.to_f / 8).ceil.to_i %>">
+  <%= partial "sheet", locals: { pages: pages[0..7], sheet: 1, asset_dir: asset_dir } %>
+  <% if pages.length > 8 %>
+    <%= partial "sheet", locals: { pages: pages[8..-1], sheet: 2, asset_dir: asset_dir } %>
+  <% end %>
+</main>
+<footer class="footer">
+  <%= partial("footer_page") %>
+</footer>
+
+<!-- JS is available in site.js -->
