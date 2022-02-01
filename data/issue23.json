@@ -1,0 +1,37 @@
+{
+  "asset_dir": "issue23/",
+  "pages": [
+    {
+      "title": "",
+      "image": "cover23-mrrogers.png",
+      "author": "Mr Rogers"
+    },
+    { "blank": true },
+    {
+      "title": "",
+      "image": "moon-gabby.jpg",
+      "author": "Gabrielle Taylor"
+    },
+    {
+      "title": "Moon - The Moo Shot",
+      "image": "moon-the-moo-shoot-shannon.png",
+      "author": "Shannon Wells"
+    },
+    {
+      "title": "DIY Video",
+      "image": "The-DIY-video-shannon.png",
+      "author": "Shannon Wells"
+    },
+    {
+      "title": "",
+      "image": "moon-nikki.png",
+      "author": "Nicole Thayer"
+    },
+    {
+      "title": "Bunnymatic Moonshot",
+      "image": "bunnymatic-moonshot.png",
+      "author": "Mr Rogers"
+    },
+    { "blank": true }
+  ]
+}
