@@ -1,0 +1,58 @@
+{
+  "asset_dir": "issue24/",
+  "pages": [
+    { "title": "", "image": "sailaway-cover1.png", "author": "Mr Rogers" },
+    { "title": "", "image": "sail-away-ruth.jpg", "author": "Ruth White" },
+    {
+      "title": "Lila",
+      "image": "Lila-dylan.png",
+      "author": "Dylan Clark"
+    },
+    {
+      "title": "EGG",
+      "image": "egg_zine-ryanw.png",
+      "author": "Ryan Workman"
+    },
+    { "image": "sail-away-efung.jpg", "author": "Eric Fung" },
+    {
+      "title": "Sailing Away",
+      "image": "Sailing-away-shannonw.jpg",
+      "author": "Shannon Wells"
+    },
+    { "title": "", "image": "sailaway-nicole.png", "author": "Nicole Thayer" },
+
+    {
+      "title": "Bye",
+      "image": "bye-for-now-vanvisa.png",
+      "author": "Vanvisa Musigapala"
+    },
+    { "image": "cover-nicole.png", "author": "Nicole Thayer" },
+    { "image": "FinalZine-SetACourse-sam.jpg", "author": "Sam Nazarian" },
+    { "image": "wanderlust-jaz.jpg", "author": "Jazmyne Mills" },
+    {
+      "title": "",
+      "image": "magiccarpet-mrrogers.png",
+      "author": "Mr Rogers"
+    },
+    { "partial_name": "issue24/sail-away-hampton", "author": "Brian Hampton" },
+    { "image": "away-nancy-samahito.png", "author": "Nancy Samahito" },
+    { "image": "sailawayc5-gintel.jpg", "author": "Gintel Gee" },
+    { "image": "GOne_1-elias.jpg", "author": "Elias Crouch" },
+    { "image": "sailaway-gintel-cover3.jpg", "author": "Gintel Gee" },
+    {
+      "title": "Sail Away",
+      "image": "sail-away-mrrogers.jpg",
+      "author": "Mr Rogers"
+    },
+    { "partial_name": "issue24/sail_away_svenningsen", "author": "Chris Svenningsen" },
+    { "image": "waves-anim-nicole-gif", "author": "Nicole Thayer" },
+    { "image": "sail-away-avery-wynholds.jpg", "author": "Avery Wynholds" },
+    { "image": "sail-away-gabrielle.jpg", "author": "Gabrielle Taylor" },
+    { "image": "sail-away-courtney.png", "author": "Courtney Hemphill" },
+    {
+      "title": "The End",
+      "image": "the-end-nicole.png",
+      "author": "Nicole Thayer"
+    }
+  ]
+}
