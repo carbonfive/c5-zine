@@ -4,7 +4,7 @@
   object-fit: contain;
   max-height: 100%;
   max-width: 100%;
-  width:100%;
+  width: 100%;
   padding: 1rem;
   box-sizing: border-box;
   margin: 0 auto;
@@ -22,7 +22,7 @@
     margin-top: 0;
   }
   .zine-li:before {
-    content: '\21D2';
+    content: "\21D2";
     margin-left: -20px;
     margin-right: 10px;
   }
@@ -38,10 +38,9 @@
 
   figcaption {
     font-size: 100%;
-    text-align:right;
+    text-align: right;
     padding: 0;
     margin: 0 2rem 0 2rem;
-
   }
   &.zine--sheet-1 .zine-page.page-1 {
     /* no by-line for the cover */
@@ -93,7 +92,6 @@
 }
 
 .footer {
-
   .footer-contents {
     padding: 10px 30px;
     margin: auto;
@@ -116,7 +114,6 @@
 }
 
 .zine {
-
   .special-issue-2-footer {
     .footer-contents {
       padding: 10px 30px;
@@ -168,7 +165,7 @@
 @media print {
   body {
     font-size: 9pt;
-    margin:auto;
+    margin: auto;
   }
   .embed-youtube {
     iframe {
@@ -252,9 +249,12 @@
   .zine--sheet {
     grid-template-areas:
       "page-5 page-4 page-3 page-2"
-        "page-6 page-7 page-8 page-1";
+      "page-6 page-7 page-8 page-1";
 
-    .page-5, .page-4, .page-3, .page-2 {
+    .page-5,
+    .page-4,
+    .page-3,
+    .page-2 {
       transform: rotate(180deg);
     }
   }

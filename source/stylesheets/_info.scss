@@ -44,33 +44,33 @@
 .info-steps__item--2 {
   .info-steps__item-image {
     @include instructional-image;
-    background-image: image-url('fold-in-half-first.svg');
+    background-image: image-url("fold-in-half-first.svg");
   }
 }
 
 .info-steps__item--3 {
   .info-steps__item-image {
     @include instructional-image;
-    background-image: image-url('fold-in-half-long-way.svg');
+    background-image: image-url("fold-in-half-long-way.svg");
   }
 }
 
 .info-steps__item--5 {
   .info-steps__item-image {
     @include instructional-image;
-    background-image: image-url('folding-layout.svg');
+    background-image: image-url("folding-layout.svg");
   }
 }
 .info-steps__item--7 {
   .info-steps__item-image {
     @include instructional-image;
-    background-image: image-url('push-center-together.svg');
+    background-image: image-url("push-center-together.svg");
   }
 }
 
 .info-steps__item--8 {
   .info-steps__item-image {
     @include instructional-image;
-    background-image: image-url('finished-book.svg');
+    background-image: image-url("finished-book.svg");
   }
 }
