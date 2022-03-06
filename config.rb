@@ -12,6 +12,12 @@ page '/*.xml', layout: false
 page '/*.json', layout: false
 page '/*.txt', layout: false
 
+# for printables links
+redirect 'issue24-3.html', to: '/index.html'
+redirect 'issue24-2.html', to: '/index.html'
+redirect 'issue24-1.html', to: '/index.html'
+redirect 'issue24.html', to: '/index.html'
+
 # With alternative layout
 # page '/path/to/file.html', layout: 'other_layout'
 
