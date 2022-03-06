@@ -5,8 +5,9 @@
 <%
 asset_dir = data.issue24.asset_dir
 pages = data.issue24.pages
+current_issues = [data.issues['issue24-1'], data.issues['issue24-2'], data.issues['issue24-3']]
 %>
-
+<%= partial "navigation", locals: { issues: current_issues } %>
 <main class="zine-sheet-count-<%= (pages.length.to_f / 8).ceil.to_i %>">
   <%= partial "sheet", locals: { pages: pages[0..7], sheet: 1, asset_dir: asset_dir } %>
   <% if pages.length > 8 %>

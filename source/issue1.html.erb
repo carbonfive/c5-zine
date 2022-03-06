@@ -5,8 +5,9 @@
 <%
 asset_dir = data.issue1.asset_dir
 page = data.issue1.pages[0]
+current_issue = data.issues.issue1
 %>
-
+<%= partial "navigation", locals: { issue: current_issue } %>
 <main class="zine zine--sheet">
   <header class="zine-page page-1">
     <%= image_tag( asset_dir + page.image, class: "full-img", alt: page.title ) %>
@@ -23,9 +24,3 @@ page = data.issue1.pages[0]
     </div>
   </footer>
 </main>
-
-<script type="text/javascript">
- document.addEventListener("DOMContentLoaded", function() {
-   document.querySelector(".nav-item__print-button").addEventListener("click", function() { window.print(); } );
- });
-</script>

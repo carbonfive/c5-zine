@@ -5,8 +5,9 @@
 <%
 asset_dir = data.issue3.asset_dir
 pages = data.issue3.pages
+current_issue = data.issues.issue3
 %>
-
+<%= partial "navigation", locals: { issue: current_issue } %>
 <main class="zine-sheet-count-<%= (pages.length.to_f / 8).ceil.to_i %>">
   <%= partial "sheet", locals: { pages: pages[0..7], sheet: 1, asset_dir: asset_dir } %>
   <% if pages.length > 8 %>
@@ -16,9 +17,3 @@ pages = data.issue3.pages
 <footer class="footer">
   <%= partial("footer_page") %>
 </footer>
-
-<script type="text/javascript">
- document.addEventListener("DOMContentLoaded", function() {
-   document.querySelector(".nav-item__print-button").addEventListener("click", function() { window.print(); } );
- });
-</script>

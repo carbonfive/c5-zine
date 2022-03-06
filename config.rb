@@ -55,4 +55,5 @@ redirect 'issue24.html', to: '/index.html'
 activate :directory_indexes
 activate :relative_assets
 activate :asset_hash
+activate :inline_svg
 set :relative_links, true

@@ -1,0 +1,23 @@
+---
+"title": "C5 Zine - Collect the Whole Set!"
+---
+
+<main class="info">
+  <h2>Collect The Whole Set!</h2>
+  <section class="issues-list">
+    <ul>
+      <% data.issues.each do |k,v| %>
+        <li>
+          <div class="label">
+            <a href="/<%= k %>" >Issue <%= v['number'] %> &mdash; <%= v['name'] %></a>
+          </div>
+          <div class="pdf">
+            <a href="<%= image_path("pdfs/" + v['pdf']) %>" title="<%= "Download PDF for Issue #{v['number']} #{v['name']}" %>" target="_blank">
+              <%= inline_svg 'document-icon.svg' %>
+            </a>
+          </div>
+        </li>
+      <% end %>
+    </ul>
+  </section>
+</main>
