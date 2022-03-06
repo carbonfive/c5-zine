@@ -1,5 +1,3 @@
-<%= num_past_issues = 23 %>
-%>
 <div class="footer-contents">
   &#9825; thanks to the readers and contributors &#9825;
   <br>
@@ -8,9 +6,8 @@
 <div class="past-issues">
   <div class="past-issues__header">Past Issues:</div>
   <div class="past-issues__navigation">
-  <% num_past_issues.times.map do |idx| %>
-    <% issue_number = num_past_issues - idx %>
-    <%= link_to issue_number, "issue#{issue_number}", class: "past-issues__link" %>
-  <% end %>
+    <% Hash[data.issues.to_a.reverse].each do |k,v| %>
+      <%= link_to v["number"], k, title: v["name"], class: "past-issues__link" %>
+    <% end %>
   </div>
 </div>
