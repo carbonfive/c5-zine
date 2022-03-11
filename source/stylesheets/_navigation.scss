@@ -68,6 +68,7 @@ $button-icon-size: 0.8 * $button-size;
 }
 
 .nav-item__print-button {
+  color: $blue-charcoal;
   @include nav-button;
 }
 
@@ -84,6 +85,12 @@ $button-icon-size: 0.8 * $button-size;
 .nav-item__home-icon {
   @include nav-icon;
   background-image: image-url("home-icon.svg");
+}
+
+.nav-item__list-icon {
+  @include nav-icon;
+  background-image: image-url("list-icon.svg");
+  width: 32px;
 }
 
 @media print {

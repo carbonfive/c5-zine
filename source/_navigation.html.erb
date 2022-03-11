@@ -1,13 +1,30 @@
+<% # expects issue object passed in with 'pdf', 'name', 'number'
+# or issues array of issues object %>
+<% issue = issue || {} %>
+<% issues = issues || [] %>
 <nav class="nav">
   <ol class="nav__items">
-    <li class="nav-item nav-item__print">
-      <button class="nav-item__print-button" title="Print Me!" ><i class="nav-item__print-button-icon"></i></button>
+    <% if issue['pdf'] %>
+      <li class="nav-item nav-item__print">
+        <a href="<%= image_path("pdfs/#{issue['pdf']}") %>" class="nav-item__print-button" title="<%= "Download PDF of Issue #{issue['number']} #{issue['name']}" %>" ><%=  inline_svg 'document-icon.svg', width:32, height: 32 %></a>
+      </li>
+    <% end %>
+    <% if issues.length > 0 %>
+      <% issues.each do |issue| %>
+        <li class="nav-item nav-item__print">
+          <a href="<%= image_path("pdfs/#{issue['pdf']}") %>" class="nav-item__print-button" title="<%= "Download PDF of Issue #{issue['number']} #{issue['name']}" %>" ><%=  inline_svg 'document-icon.svg', width:32, height: 32 %></a>
+        </li>
+      <% end %>
+    <% end %>
+
+    <li class="nav-item nav-item__info">
+      <%= link_to '<i class="nav-item__info-icon"></i>', "info", class: "nav-item__info-link", title: "how to create the zine", target:"_blank" %>
     </li>
     <li class="nav-item nav-item__info">
-      <%= link_to '<i class="nav-item__info-icon"></i>', "info", class: "nav-item__info-link", target:"_blank" %>
+      <%= link_to '<i class="nav-item__home-icon"></i>', "/index.html", class: "nav-item__info-link", title: "current issue", target:"_blank" %>
     </li>
     <li class="nav-item nav-item__info">
-      <%= link_to '<i class="nav-item__home-icon"></i>', "/index.html", class: "nav-item__info-link", target:"_blank" %>
+      <%= link_to '<i class="nav-item__list-icon"></i>', "/issues.html", class: "nav-item__info-link", title: "index of all issues", target:"_blank" %>
     </li>
   </ol>
 </nav>
